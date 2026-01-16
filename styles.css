@@ -3,3 +3,55 @@
     margin: 0;
     box-sizing: border-box;
 }
+
+body {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.row {
+    width: 100%;
+    flex: auto;
+    display: flex;
+    height: 100px;
+    gap: 2px
+}
+
+.display-row {
+    justify-content: right;
+    font-size: 60px;
+    height: 120px;
+    border: 1px solid black;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+button {
+    flex: 1;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid gray;
+    font-size: 20px;
+}
+
+button:hover {
+    background-color: lightgray;
+}
+
+#divide {
+    width: 113px;
+    flex: none;
+}
