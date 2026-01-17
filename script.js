@@ -11,6 +11,9 @@ function multiply(x, y) {
 }
 
 function divide(x, y) {
+    if (y === 0) {
+        return "Nice Try!";
+    }
     return (x / y).toString();
 }
 
