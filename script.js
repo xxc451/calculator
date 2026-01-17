@@ -1,20 +1,20 @@
 function add(x, y) {
-    return (x + y).toString();
+    return Number(Math.round(x + y + "e5") + "e-5").toString();
 }
 
 function subtract(x, y) {
-    return (x - y).toString();
+    return Number(Math.round(x - y + "e5") + "e-5").toString();
 }
 
 function multiply(x, y) {
-    return (x * y).toString();
+    return Number(Math.round(x * y + "e5") + "e-5").toString();
 }
 
 function divide(x, y) {
     if (y === 0) {
         return "Nice Try!";
     }
-    return (x / y).toString();
+    return Number(Math.round(x / y + "e5") + "e-5").toString();
 }
 
 function operate(x, y, op) {
